@@ -1,0 +1,25 @@
+{
+  "extends": "./es5lint.json",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prefer-const": ["warn"],
+    "no-const-assign": ["warn"],
+    "no-var": ["warn"],
+    "object-shorthand": ["warn"],
+    "prefer-template": ["warn"],
+    "template-curly-spacing": ["warn"],
+    "prefer-rest-params": ["warn"],
+    "prefer-arrow-callback": ["warn"],
+    "arrow-spacing": ["warn"],
+    "arrow-parens": ["warn"],
+    "arrow-body-style": ["warn"],
+    "no-confusing-arrow": ["warn"],
+    "no-useless-constructor": ["warn"],
+    "no-dupe-class-members": ["warn"],
+    "no-duplicate-imports": ["warn"],
+    "no-case-declarations": ["warn"]
+	}
+}

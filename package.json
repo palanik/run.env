@@ -1,0 +1,40 @@
+{
+  "name": "run.env",
+  "version": "1.0.0",
+  "description": "Execute commands with .env file",
+  "main": "lib/index.js",
+  "bin": {
+    "run.env": "./bin/run.env"
+  },
+  "preferGlobal": true,
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "./eslint/es6lint.json"
+  },
+  "scripts": {
+    "lint": "eslint src/**",
+    "build": "babel --presets es2015 src -d lib",
+    "prepublish": "rm -fr lib/ && npm run build",
+    "dev": "./node_modules/.bin/babel-node src/",
+    "start": "node lib/"
+  },
+  "engines": {
+    "node": ">=6.1.0",
+    "npm": ">=3.8.6"
+  },
+  "author": "N. Palani Kumanan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.10.2"
+  }
+}
