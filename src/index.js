@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import { spawnSync } from 'child_process';
 
-dotenv.config();
+dotenv.config({ silent: true });
 
 const args = process.argv.slice(2);
 spawnSync(
@@ -9,6 +9,6 @@ spawnSync(
   args.slice(1),
   {
     env: process.env,
-    stdio: 'inherit'
-  }
+    stdio: 'inherit',
+  },
 );

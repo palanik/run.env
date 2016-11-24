@@ -6,7 +6,7 @@ Run apps with .env file.
 The tool is based on [dotenv](https://github.com/motdotla/dotenv) library.
 
 ## Installation
-
+[![NPM version](https://img.shields.io/npm/v/run.env.svg?style=flat)](https://www.npmjs.org/package/run.env)
 ```sh
 $ npm install -g run.env
 ```
