@@ -14,7 +14,7 @@ const res = spawnSync(
 );
 
 if (res.status) {
-	process.exit(res.status);
+  process.exit(res.status);
 } else if (res.error) {
-	process.exit(1);
+  process.exit(1);
 }

@@ -38,6 +38,7 @@ webpack.config.js
 .babelrc
 .gitattributes
 *.tgz
+package-lock.json
 
 # mac
 .DS_Store

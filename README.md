@@ -22,7 +22,8 @@ DB_USER=root
 DB_PASS=dadada
 ```
 
-Now you can execute your app with `run.env`
+Now, you can execute your app with `run.env` command.
+(No need to include `dotenv` in your code.)
 
 ```sh
 $ run.env app arg1 arg2 ...

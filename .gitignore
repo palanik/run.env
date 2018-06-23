@@ -29,6 +29,7 @@ node_modules
 # generated files
 lib/
 *.tgz
+package-lock.json
 
 test.js
 .env
