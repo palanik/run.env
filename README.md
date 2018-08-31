@@ -36,6 +36,11 @@ Example
 $ run.env node my-node-app.js
 ```
 
+Pass in the path to your `.env`-file using the `-p` flag:
+```
+$ run.env -p my/path/env-file node my-node-app.js
+```
+
 ## License
 
   [MIT](LICENSE)
