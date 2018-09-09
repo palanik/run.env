@@ -2,18 +2,16 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { spawnSync } from 'child_process';
 
-let args = process.argv.slice(2);
+const args = process.argv.slice(2);
 const opts = {
-  silent: true
+  silent: true,
 };
 
 // Check if a path option has been passed.
 if (args[0] === '-p') {
-  Object.assign(opts, {
-    path: path.resolve(process.cwd(), args[1])
-  });
+  opts.path = path.resolve(process.cwd(), args[1]);
   // remove both args.
-  args.splice(0, 2)
+  args.splice(0, 2);
 }
 
 dotenv.config(opts);
