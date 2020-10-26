@@ -38,7 +38,8 @@
     "build": "babel --presets es2015 src -d lib",
     "prepublish": "rm -fr lib/ && npm run build",
     "dev": "./node_modules/.bin/babel-node src/",
-    "start": "node lib/"
+    "start": "node lib/",
+    "test": "npm run build && node lib/index.js node test/test_app.js"
   },
   "engines": {
     "node": ">=6.1.0",
