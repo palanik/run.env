@@ -41,6 +41,12 @@ Pass in the path to your `.env`-file using the `-p` flag:
 $ run.env -p my/path/env-file node my-node-app.js
 ```
 
+Run test locally:
+1. Change `.env.test` to `.env`
+2. Run `npm run test`. This command will create the build and simulate how `run.env` works on `test/test_app.js`
+3. If the test passed, it would log _"This is the content of TEST variable"_ which is the value of TEST variable in `.env` file
+4. Otherwise, it would log _"No value for process.env.TEST"_ 
+
 ## License
 
   [MIT](LICENSE)
